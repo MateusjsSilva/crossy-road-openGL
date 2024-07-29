@@ -135,6 +135,7 @@
     <ClInclude Include="core\gameplay\events.hpp" />
     <ClInclude Include="core\gameplay\keyboard.hpp" />
     <ClInclude Include="core\gameplay\lighting.hpp" />
+    <ClInclude Include="core\gameplay\map.hpp" />
     <ClInclude Include="core\gameplay\material.hpp" />
     <ClInclude Include="core\gameplay\mouse.hpp" />
     <ClInclude Include="core\gameplay\objects\car.hpp" />

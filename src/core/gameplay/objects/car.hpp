@@ -11,14 +11,15 @@
 #ifndef car_hpp
     #define car_hpp
 
-    extern float playerRelativeToGridX;
+    extern int playerRelativeToGridX;
     extern int playerRelativeToGridZ;
     extern bool playerIsDead;
 
-    class car {
+    class car 
+    {
         public:
             car(float inputX, float inputZ, float inputSpeed, int inputDirection, int inputLane);
-            void Update();
+            void update();
             float x = -60.0, y = -5.0, z;
             int type, direction, lane;
 
@@ -36,7 +37,7 @@
         type = (rand() % ((3 - 0) + 3)) + 0;
     }
 
-    void car::Update() 
+    void car::update() 
     {
         if (direction == 0) {
             x += speed;

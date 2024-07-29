@@ -11,7 +11,6 @@
 
 int main(int argc, char* argv[])
 {
-    core::init(argc, argv);
-    core::run();
+    core::run(argc, argv);
     return 0;
 }

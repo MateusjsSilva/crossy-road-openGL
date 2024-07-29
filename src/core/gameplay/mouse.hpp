@@ -11,7 +11,8 @@
 #ifndef mouse_hpp
 	#define mouse_hpp
 
-	class mouse {
+	class mouse 
+	{
 		public:
 
 		private:

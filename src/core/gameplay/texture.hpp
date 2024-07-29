@@ -11,7 +11,8 @@
 #ifndef texture_hpp
 	#define texture_hpp
 
-	class texture {
+	class texture 
+	{
 		public:
 
 		private:

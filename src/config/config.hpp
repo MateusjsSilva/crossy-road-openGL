@@ -27,6 +27,8 @@
 	#include <random>
 	#include <iostream>
 	#include <cstdlib>
+	#include <vector>
+	#include <ctime>
 	#include <map>
 
 	// Define PI if not already defined

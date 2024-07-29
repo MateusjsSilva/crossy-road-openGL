@@ -11,7 +11,8 @@
 #ifndef lighting_hpp
 	#define lighting_hpp
 
-	class lighting {
+	class lighting 
+	{
 		public:
 
 		private:

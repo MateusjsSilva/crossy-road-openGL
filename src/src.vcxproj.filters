@@ -74,5 +74,8 @@
     <ClInclude Include="core\gameplay\objects\player.hpp">
       <Filter>Arquivos de Cabeçalho\objects</Filter>
     </ClInclude>
+    <ClInclude Include="core\gameplay\map.hpp">
+      <Filter>Arquivos de Cabeçalho\gameplay</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

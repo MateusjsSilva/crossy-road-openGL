@@ -11,7 +11,8 @@
 #ifndef objectLoader_hpp
     #define objectLoader_hpp
 
-    class objectLoader {
+    class objectLoader 
+    {
         public:
 
         private:

@@ -11,7 +11,8 @@
 #ifndef material_hpp
 	#define material_hpp
 
-	class material {
+	class material 
+	{
 		public:
 
 		private:
