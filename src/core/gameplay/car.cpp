@@ -20,7 +20,6 @@ bool Car::update(int w1, int w2, float playerX, float playerZ, int playerGridX, 
         x += speed;
         if (x > w2) {
             x = w1;
-           
         }
     }
     else {
@@ -71,10 +70,10 @@ void Car::draw()
             glDisable(GL_LIGHTING);
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
-            glColor3f(1, 1, 1);
-            glTranslatef(x, y + .25, z + 120 + gameZ);
-            glScaled(.7, .4, .5);
-            glutSolidCube(3);
+                glColor3f(1, 1, 1);
+                glTranslatef(x, y + .25, z + 120 + gameZ);
+                glScaled(.7, .4, .5);
+                glutSolidCube(3);
             glPopMatrix();
             glEnable(GL_LIGHTING);
             glEnable(GL_TEXTURE_2D);
@@ -83,10 +82,10 @@ void Car::draw()
             glDisable(GL_LIGHTING);
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
-            glColor3f(0, 0, 0);
-            glTranslatef(x, y - .15, z + 120 + gameZ);
-            glScaled(.5, .25, .51);
-            glutSolidCube(3);
+                glColor3f(0, 0, 0);
+                glTranslatef(x, y - .15, z + 120 + gameZ);
+                glScaled(.5, .25, .51);
+                glutSolidCube(3);
             glPopMatrix();
             glEnable(GL_LIGHTING);
             glEnable(GL_TEXTURE_2D);
@@ -95,10 +94,10 @@ void Car::draw()
             glDisable(GL_LIGHTING);
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
-            glColor3f(0, 0, 0);
-            glTranslatef(x , y - .15, z + 120 + gameZ);
-            glScaled(.71, .25, .4);
-            glutSolidCube(3);
+                glColor3f(0, 0, 0);
+                glTranslatef(x , y - .15, z + 120 + gameZ);
+                glScaled(.71, .25, .4);
+                glutSolidCube(3);
             glPopMatrix();
             glEnable(GL_LIGHTING);
             glEnable(GL_TEXTURE_2D);
@@ -107,10 +106,10 @@ void Car::draw()
             glDisable(GL_LIGHTING);
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
-            glColor3f(4.0 / 255.0, 187.0 / 255.0, 253.0 / 255.0);
-            glTranslatef(x + (.25 * facing), y - .30, z + 120 + gameZ);
-            glScaled(.3, .15, 1);
-            glutSolidCube(3);
+                glColor3f(4.0 / 255.0, 187.0 / 255.0, 253.0 / 255.0);
+                glTranslatef(x + (.25 * facing), y - .30, z + 120 + gameZ);
+                glScaled(.3, .15, 1);
+                glutSolidCube(3);
             glPopMatrix();
             glEnable(GL_LIGHTING);
             glEnable(GL_TEXTURE_2D);
@@ -119,10 +118,10 @@ void Car::draw()
             glDisable(GL_LIGHTING);
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
-            glColor3f(0, 0, 0);
-            glTranslatef(x  + (1 * facing), y - .80, z + 120 + gameZ);
-            glScaled(.3, .3, .815);
-            glutSolidCube(3);
+                glColor3f(0, 0, 0);
+                glTranslatef(x  + (1 * facing), y - .80, z + 120 + gameZ);
+                glScaled(.3, .3, .815);
+                glutSolidCube(3);
             glPopMatrix();
             glEnable(GL_LIGHTING);
             glEnable(GL_TEXTURE_2D);
@@ -130,10 +129,10 @@ void Car::draw()
             glDisable(GL_LIGHTING);
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
-            glColor3f(1, 1, 1);
-            glTranslatef(x  + (1 * facing), y - .80, z + 120 + gameZ);
-            glScaled(.125, .125, .816);
-            glutSolidCube(3);
+                glColor3f(1, 1, 1);
+                glTranslatef(x  + (1 * facing), y - .80, z + 120 + gameZ);
+                glScaled(.125, .125, .816);
+                glutSolidCube(3);
             glPopMatrix();
             glEnable(GL_LIGHTING);
             glEnable(GL_TEXTURE_2D);
@@ -142,10 +141,10 @@ void Car::draw()
             glDisable(GL_LIGHTING);
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
-            glColor3f(0, 0, 0);
-            glTranslatef(x  - (1 * facing), y - .80, z + 120 + gameZ);
-            glScaled(.3, .3, .815);
-            glutSolidCube(3);
+                glColor3f(0, 0, 0);
+                glTranslatef(x  - (1 * facing), y - .80, z + 120 + gameZ);
+                glScaled(.3, .3, .815);
+                glutSolidCube(3);
             glPopMatrix();
             glEnable(GL_LIGHTING);
             glEnable(GL_TEXTURE_2D);
@@ -153,10 +152,10 @@ void Car::draw()
             glDisable(GL_LIGHTING);
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
-            glColor3f(1, 1, 1);
-            glTranslatef(x  - (1 * facing), y - .80, z + 120 + gameZ);
-            glScaled(.125, .125, .816);
-            glutSolidCube(3);
+                glColor3f(1, 1, 1);
+                glTranslatef(x  - (1 * facing), y - .80, z + 120 + gameZ);
+                glScaled(.125, .125, .816);
+                glutSolidCube(3);
             glPopMatrix();
             glEnable(GL_LIGHTING);
             glEnable(GL_TEXTURE_2D);
