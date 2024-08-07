@@ -2,12 +2,13 @@
  * -----------------------------------------
  * Computer Graphics
  * Code: frogger + crossy road
- * Authors: Mateus Silva, Jailson Palhares
+ * Author: Mateus Silva
  * -----------------------------------------
  */
 
-#include "config/config.hpp"
-#include "core/core.hpp"
+#define SDL_MAIN_HANDLED
+
+#include "core/core.h"
 
 int main(int argc, char* argv[])
 {
