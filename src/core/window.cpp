@@ -18,7 +18,7 @@ int keyframe = 0; // numero do modelo 3D (keyframe) da animacao que sera desenha
 
 // Definicao dos parametros do modelo de iluminacao
 GLfloat light_position[] = { 0.0, 70.0, 0.0, 1.0 };
-GLfloat light_ambient[] = { 0.6, 0.6, 1.0, 1.0 };
+GLfloat light_ambient[] = { 0.6, 0.6, 6.0, 1.0 };
 
 // player
 enum PlayerID { idle };

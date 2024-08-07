@@ -30,16 +30,16 @@ bool Car::update(int w1, int w2, float playerX, float playerZ, int playerGridX, 
         }
     }
 
-    const float playerWidth = 2.0;
-    const float carWidth = 2.0;
-
-    // Verificar se o carro colide com o jogador
     if (playerGridZ == road) {
-        // Verifica colisão no eixo X
-        bool collisionX = (playerX + playerWidth > x) && (playerX < x + carWidth);
+        // Calcula a distância euclidiana entre o centro do carro e o centro do jogador
+        float dx = x - playerX;
+        float dz = z - playerZ;
+        float distance = sqrt(dx * dx + dz * dz);
 
-        // Se houver colisão no eixo 
-        if (collisionX) {
+        const float playerRadius = 1.0;
+        const float carRadius = 1.5;
+
+        if (distance < (playerRadius + carRadius)) {
             return true;
         }
     }
