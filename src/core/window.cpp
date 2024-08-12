@@ -1,7 +1,7 @@
 /*
  * -----------------------------------------
  * Computer Graphics
- * Code: frogger + crossy road
+ * Code: crossy road
  * Author: Mateus Silva
  * -----------------------------------------
  */
@@ -87,7 +87,7 @@ void initGlut(const char* title, int argc, char** argv)
     generateCars();
 
     sound.play("core/resources/sounds/track1.wav");
-    sound.setVolume(20);
+    sound.setVolume(60);
 
     glutMainLoop();
 
@@ -100,7 +100,6 @@ void loadPlayerAnimations()
     animation = glmLoadAnimation("core/resources/assets/chicken/chicken.obj", idle, 1);
     animation->name = "idle";
     animations[idle] = animation;
-    printf(".");
 }
 
 void reshape(int width, int height)
@@ -387,7 +386,7 @@ void renderPlayer(float x, float z, GLuint mode, int playerDirection, bool isJum
             float elapsedTime = glutGet(GLUT_ELAPSED_TIME) / 1000.0f - jumpStartTime;
             if (elapsedTime < jumpDuration) {
                 float jumpProgress = elapsedTime / jumpDuration;
-                yOffset = sin(jumpProgress * M_PI) * 2.0f; // Ajuste o multiplicador para a altura do pulo
+                yOffset = sin(jumpProgress * M_PI) * 2.0f; 
             }
             else {
                 isJumping = false; // Pulo completado

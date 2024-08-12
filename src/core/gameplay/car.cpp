@@ -59,7 +59,7 @@ void Car::draw()
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
                 glColor3f(25.0 / 255.0, 222.0 / 255.0, 254.0 / 255.0);
-                glTranslatef(x, y - 1.25, z + 120 + gameZ);
+                glTranslatef(x, y - 1, z + 120 + gameZ);
                 glScaled(1.2, .5, .8);
                 glutSolidCube(3);
             glPopMatrix(); 
@@ -71,7 +71,7 @@ void Car::draw()
             glDisable(GL_TEXTURE_2D);
             glPushMatrix();
                 glColor3f(1, 1, 1);
-                glTranslatef(x, y + .25, z + 120 + gameZ);
+                glTranslatef(x, y + .35, z + 120 + gameZ);
                 glScaled(.7, .4, .5);
                 glutSolidCube(3);
             glPopMatrix();
