@@ -87,7 +87,7 @@ void initGlut(const char* title, int argc, char** argv)
     generateCars();
 
     sound.play("core/resources/sounds/track1.wav");
-    sound.setVolume(60);
+    sound.setVolume(100);
 
     glutMainLoop();
 
@@ -348,7 +348,7 @@ void generateCars()
     {
         if (levelData[i][0] == '2')
         {
-            float speed = 0.25f + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (0.6f - 0.25f)));
+            float speed = 0.35f + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (0.6f - 0.25f)));
             float distance1 = 15.0f + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (40.0f - 15.0f)));
 
             int a = i * -1 * 5;
